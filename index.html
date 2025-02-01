@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин Robux</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Магазин Robux</h1>
+        <p>Купите Robux по лучшим ценам!</p>
+    </header>
+
+    <main>
+        <div class="products">
+            <div class="product">
+                <h2>400 Robux</h2>
+                <p>Цена: 199 ₽</p>
+                <button onclick="addToCart('400 Robux', 199)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <h2>800 Robux</h2>
+                <p>Цена: 399 ₽</p>
+                <button onclick="addToCart('800 Robux', 399)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <h2>1700 Robux</h2>
+                <p>Цена: 799 ₽</p>
+                <button onclick="addToCart('1700 Robux', 799)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <h2>3400 Robux</h2>
+                <p>Цена: 1499 ₽</p>
+                <button onclick="addToCart('3400 Robux', 1499)">Добавить в корзину</button>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Корзина</h2>
+            <ul id="cart-items"></ul>
+            <p>Итого: <span id="total-price">0</span> ₽</p>
+            <button onclick="checkout()">Оплатить через Donation Alerts</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 Магазин Robux. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
