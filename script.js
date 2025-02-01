@@ -32,6 +32,6 @@ function checkout() {
     }
 
     // Перенаправление на Donation Alerts
-    const donationAlertsLink = `https://www.donationalerts.com/r/ваш_никнейм?amount=${totalPrice}`;
+    const donationAlertsLink = `https://www.donationalerts.com/r/111r112?amount=${totalPrice}`;
     window.open(donationAlertsLink, '_blank');
 }
